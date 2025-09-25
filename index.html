@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,25 +8,28 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display"></div>
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
         <div class="buttons">
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">/</button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">*</button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">-</button>
-            <button>0</button>
-            <button class="decimal">.</button>
-            <button class="equals">=</button>
-            <button class="operator">+</button>
-            <button class="clear">C</button>
+            <button onclick="clearScreen()">C</button>
+            <button onclick="deleteLast()">DEL</button>
+            <button onclick="insert('.')">.</button>
+            <button onclick="insert('*')">*</button>
+            <button onclick="insert('7')">7</button>
+            <button onclick="insert('8')">8</button>
+            <button onclick="insert('9')">9</button>
+            <button onclick="insert('/')">/</button>
+            <button onclick="insert('4')">4</button>
+            <button onclick="insert('5')">5</button>
+            <button onclick="insert('6')">6</button>
+            <button onclick="insert('-')">-</button>
+            <button onclick="insert('1')">1</button>
+            <button onclick="insert('2')">2</button>
+            <button onclick="insert('3')">3</button>
+            <button onclick="insert('+')">+</button>
+            <button onclick="insert('0')">0</button>
+            <button onclick="calculate()">=</button>
         </div>
     </div>
     <script src="script.js"></script>
